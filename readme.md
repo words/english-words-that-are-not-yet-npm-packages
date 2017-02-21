@@ -56,6 +56,10 @@ you're getting up-to-date results, just reinstall this package:
 yarn global add english-words-that-are-not-yet-npm-packages
 ```
 
+## See Also
+
+- [feross/available](https://github.com/feross/available): Scan npm for available package names.
+
 ## License
 
 MIT
