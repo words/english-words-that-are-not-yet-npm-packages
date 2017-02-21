@@ -12,8 +12,7 @@ yarn global add english-words-that-are-not-yet-npm-packages
 
 ## Usage
 
-When you run `english-words-that-are-not-yet-npm-packages`, it prints
-all available words to stdout, one word per line:
+This thing prints all available words to stdout, one word per line:
 
 ```sh
 english-words-that-are-not-yet-npm-packages | grep foo | tail -n 5
@@ -49,8 +48,9 @@ all-the-package-names | wc -l
 
 ## Keeping Up to Date
 
-The `all-the-package-names` dependency is updated daily by a bot. To be sure
-you're getting up-to-date results, just reinstall this package:
+The [all-the-package-names](http://ghub.io/all-the-package-names) module
+is updated daily by a bot. To be sure you're getting up-to-date results,
+all you have to do is reinstall this package:
 
 ```sh
 yarn global add english-words-that-are-not-yet-npm-packages
