@@ -1,6 +1,6 @@
 {
   "name": "english-words-that-are-not-yet-npm-packages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI for finding available package names in the npm registry",
   "main": "index.js",
   "bin": "cli.js",
