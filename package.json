@@ -4,7 +4,7 @@
   "description": "A CLI for finding available package names in the npm registry",
   "main": "index.js",
   "bin": "cli.js",
-  "repository": "https://github.com/zeke/english-words-that-are-not-yet-npm-packages",
+  "repository": "https://github.com/nice-registry/english-words-that-are-not-yet-npm-packages",
   "author": "zeke",
   "license": "MIT",
   "dependencies": {
