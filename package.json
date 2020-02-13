@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "all-the-package-names": "^1.3140.0",
-    "an-array-of-english-words": "^1.2.0",
+    "an-array-of-english-words": "^2.0.0",
     "lodash.difference": "^4.5.0"
   },
   "devDependencies": {
