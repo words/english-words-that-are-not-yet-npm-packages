@@ -1,15 +1,59 @@
 {
   "name": "english-words-that-are-not-yet-npm-packages",
   "version": "1.0.2",
-  "description": "A CLI for finding available package names in the npm registry",
-  "main": "index.js",
-  "bin": "cli.js",
-  "repository": "https://github.com/nice-registry/english-words-that-are-not-yet-npm-packages",
-  "author": "zeke",
+  "description": "Find available package names in the npm registry",
   "license": "MIT",
+  "keywords": [
+    "english",
+    "word",
+    "npm",
+    "package"
+  ],
+  "repository": "words/english-words-that-are-not-yet-npm-packages",
+  "bugs": "https://github.com/words/english-words-that-are-not-yet-npm-packages/issues",
+  "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)",
+  "contributors": [
+    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)",
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
+  ],
+  "bin": "cli.js",
+  "main": "index.js",
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
   "dependencies": {
     "all-the-package-names": "^1.3140.0",
     "an-array-of-english-words": "^1.2.0",
     "lodash.difference": "^4.5.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.0.0",
+    "remark-cli": "^7.0.0",
+    "remark-preset-wooorm": "^6.0.0",
+    "tape": "^4.0.0",
+    "xo": "^0.26.0"
+  },
+  "scripts": {
+    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
+    "test-api": "node test",
+    "test": "npm run format && npm run test-api"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
+  },
+  "xo": {
+    "prettier": true,
+    "esnext": false
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-wooorm"
+    ]
   }
 }
